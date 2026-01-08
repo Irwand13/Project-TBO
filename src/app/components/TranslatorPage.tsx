@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 import { Card } from "./ui/card";
 import { parseMadurese } from "../utils/madureseParser";
+import ParseTreeVisualizer from "./ParseTreeVisualizer";
 
 export function TranslatorPage() {
   const [input, setInput] = useState("");
@@ -191,6 +192,18 @@ export function TranslatorPage() {
                   <p className="text-lg text-[#1a1a1a]">
                     {result.translation}
                   </p>
+                </div>
+              </div>
+
+              {/* Parse Tree Visualization */}
+              <div>
+                <label className="block mb-3 text-[#1a1a1a]">Parse Tree</label>
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                  {result.parseTree ? (
+                    <ParseTreeVisualizer tree={result.parseTree} />
+                  ) : (
+                    <p className="text-sm text-gray-600">Parse tree tidak tersedia untuk kalimat invalid.</p>
+                  )}
                 </div>
               </div>
 
