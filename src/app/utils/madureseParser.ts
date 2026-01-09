@@ -140,6 +140,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'deging': { word: 'daging', type: 'O' },
   'jhuko': { word: 'ikan', type: 'O' },
   
+  
   // Objek - Minuman
   'aeng': { word: 'air', type: 'O' },
   'teh': { word: 'teh', type: 'O' },
@@ -157,6 +158,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'lebbhar': { word: 'celana', type: 'O' },
   'topi': { word: 'topi', type: 'O' },
   'sepato': { word: 'sepatu', type: 'O' },
+  'buku': { word: 'buku', type: 'O' },
   
   // Keterangan - Tempat
   'edissa': { word: 'di sana', type: 'K' },
