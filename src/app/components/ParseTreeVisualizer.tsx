@@ -2,30 +2,44 @@ import React from "react";
 import type { ParseTreeNode } from "../utils/madureseParser";
 
 export function ParseTreeVisualizer({ tree }: { tree: ParseTreeNode | null }) {
-  if (!tree) {
-    return (
-      <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-center">
-        <p className="text-red-900">Parse tree tidak tersedia.</p>
-      </div>
-    );
-  }
+  if (!tree) return null;
 
   const renderNode = (node: ParseTreeNode) => {
+    const hasChildren = node.children && node.children.length > 0;
+
     return (
-      <div className="pl-2">
-        <div className="flex items-center gap-3 mb-2">
-          <div className="px-2 py-1 bg-[#B11226]/10 text-[#B11226] rounded text-xs font-mono">
+      <div className="flex flex-col items-center flex-1">
+        <div className="relative flex flex-col items-center">
+          {/* Box Node */}
+          <div className={`
+            px-3 py-1 rounded border shadow-sm text-xs font-mono
+            ${node.word 
+              ? "bg-white border-gray-200 text-gray-600" 
+              : "bg-[#B11226] border-[#B11226] text-white font-bold"}
+          `}>
             {node.label}
           </div>
+
+          {/* Label Kata di bawah node terminal */}
           {node.word && (
-            <div className="text-sm text-gray-700">{node.word}</div>
+            <div className="mt-1 text-[#B11226] font-medium italic text-xs">
+              {node.word}
+            </div>
           )}
+
+          {hasChildren && <div className="w-px h-4 bg-gray-300"></div>}
         </div>
 
-        {node.children && node.children.length > 0 && (
-          <div className="border-l border-gray-200 ml-4 pl-4 space-y-3">
-            {node.children.map((child, idx) => (
-              <div key={idx}>{renderNode(child)}</div>
+        {hasChildren && (
+          <div className="relative flex gap-2 w-full justify-center">
+            {/* Garis Horizontal Penghubung */}
+            <div className="absolute top-0 left-0 right-0 h-px bg-gray-300 mx-auto w-[80%]"></div>
+            
+            {node.children!.map((child, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                <div className="w-px h-2 bg-gray-300"></div>
+                {renderNode(child)}
+              </div>
             ))}
           </div>
         )}
@@ -34,8 +48,10 @@ export function ParseTreeVisualizer({ tree }: { tree: ParseTreeNode | null }) {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg border border-gray-200">
-      {renderNode(tree)}
+    <div className="w-full overflow-x-auto p-4 bg-white">
+      <div className="min-w-max flex justify-center">
+        {renderNode(tree)}
+      </div>
     </div>
   );
 }

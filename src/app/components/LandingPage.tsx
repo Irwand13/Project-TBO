@@ -26,7 +26,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
           <div className="max-w-4xl mx-auto text-center">
             <div className="mb-8">
               <div className="inline-block px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full mb-6 border border-white/20">
-                <span className="text-white/90">Aplikasi Akademik Linguistik Komputasi</span>
+                <span className="text-white/90">Universitas Muhammadiyah Malang</span>
               </div>
               <h1 className="text-white mb-6 text-4xl md:text-6xl leading-tight">
                 Penerjemah Bahasa Madura ke Bahasa Indonesia
@@ -35,7 +35,7 @@ export function LandingPage({ onNavigate }: LandingPageProps) {
                 Berbasis EBNF & Context-Free Grammar
               </p>
               <p className="text-white/80 max-w-2xl mx-auto">
-                Sistem penerjemah otomatis dengan analisis sintaksis menggunakan metode Extended Backus-Naur Form untuk penelitian linguistik komputasi
+                Sistem penerjemah otomatis dengan analisis sintaksis menggunakan metode Extended Backus-Naur Form untuk Tugas Akhir Mata Kuliah Teori Bahasa dan Automata.
               </p>
             </div>
             

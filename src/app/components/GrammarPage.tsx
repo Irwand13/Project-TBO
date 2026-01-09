@@ -95,7 +95,7 @@ export function GrammarPage() {
                 </p>
                 <div className="space-y-1">
                   <p className="text-sm text-gray-500">Contoh:</p>
-                  <code className="text-sm text-[#B11226]">sengko, bhadha, guru, anak</code>
+                  <code className="text-sm text-[#B11226]">sengko, vio, guru, anak</code>
                 </div>
               </div>
             </div>
@@ -149,7 +149,7 @@ export function GrammarPage() {
                 </p>
                 <div className="space-y-1">
                   <p className="text-sm text-gray-500">Contoh:</p>
-                  <code className="text-sm text-[#B11226]">dhibi, sateya, kalaban</code>
+                  <code className="text-sm text-[#B11226]">e romah, sateya, baramma</code>
                 </div>
               </div>
             </div>

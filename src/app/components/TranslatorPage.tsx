@@ -45,7 +45,7 @@ export function TranslatorPage() {
             <Textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Contoh: sengko makan nase dhibi"
+              placeholder="Contoh: sengko makan nase e romah"
               className="min-h-[120px] border-gray-300 focus:border-[#B11226] focus:ring-[#B11226]/20"
               onKeyDown={(e) => {
                 if (e.key === 'Enter' && e.ctrlKey) {
@@ -197,12 +197,14 @@ export function TranslatorPage() {
 
               {/* Parse Tree Visualization */}
               <div>
-                <label className="block mb-3 text-[#1a1a1a]">Parse Tree</label>
-                <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                  {result.parseTree ? (
+                <label className="block mb-3 text-[#1a1a1a]">Visualisasi Parse Tree</label>
+                <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 overflow-hidden">
+                  {result.isValid && result.parseTree ? (
                     <ParseTreeVisualizer tree={result.parseTree} />
                   ) : (
-                    <p className="text-sm text-gray-600">Parse tree tidak tersedia untuk kalimat invalid.</p>
+                    <p className="text-sm text-gray-500 italic py-4 text-center text-gray-600">
+                      Parse tree tidak tersedia untuk kalimat invalid.
+                    </p>
                   )}
                 </div>
               </div>
@@ -266,9 +268,9 @@ export function TranslatorPage() {
           <div className="grid md:grid-cols-2 gap-3">
             {[
               "sengko makan nase",
-              "guru ngajar lesson dhibi",
-              "anak belajar",
-              "dhisa laju ka dika",
+              "bengkona bana e dimma",
+              "vio nompak jharan",
+              "irwan andi sapek lema",
             ].map((example, index) => (
               <button
                 key={index}

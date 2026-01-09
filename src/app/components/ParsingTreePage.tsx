@@ -8,10 +8,10 @@ export function ParsingTreePage() {
 
   const examples = [
     { sentence: "sengko makan nase", meaning: "Saya makan nasi" },
-    { sentence: "guru ngajar lesson dhibi", meaning: "Guru mengajar pelajaran di sini" },
-    { sentence: "anak belajar", meaning: "Anak belajar" },
-    { sentence: "murid ngaji buku bi dhibi", meaning: "Murid membaca buku di sini" },
-    { sentence: "dhisa laju ka pasar sateya", meaning: "Dia pergi ke pasar sekarang" },
+    { sentence: "guru ngajhari ngoding e dinna", meaning: "Guru mengajari ngoding di sini" },
+    { sentence: "sape ngakan rebbha ", meaning: "sapi makan rumput" },
+    { sentence: "irwan macah buku e kelas ", meaning: "irwan membaca buku kelas" },
+    { sentence: "vio mangkat e pasar sateya", meaning: "vio pergi ke pasar sekarang" },
   ];
 
   const currentExample = examples[selectedExample];

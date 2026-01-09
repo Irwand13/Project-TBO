@@ -12,7 +12,7 @@ export function AboutPage() {
           </div>
           <h1 className="mb-3 text-[#1a1a1a]">Sistem Penerjemah Bahasa Madura</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Platform akademik untuk penelitian linguistik komputasi berbasis formal grammar
+            Platform akademik untuk tugas akhir mata kuliah Teori Bahasa dan Automata.
           </p>
         </div>
 
