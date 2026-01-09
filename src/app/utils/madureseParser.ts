@@ -167,6 +167,8 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'e attas': { word: 'di atas', type: 'K' },
   'e baba': { word: 'di bawah', type: 'K' },
   'e romah' : { word: 'di rumah', type: 'K' },
+  'e kelas' : { word: 'di kelas', type: 'K' },
+  'e pasar' : { word: 'di pasar', type: 'K' },
   
   // Keterangan - Waktu
   'lebbhi ngadak': { word: 'tadi', type: 'K' },
