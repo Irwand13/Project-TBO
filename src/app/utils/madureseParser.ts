@@ -165,12 +165,12 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'e': { word: 'di', type: 'K' },
   'ka': { word: 'ke', type: 'K' },
   'dhari': { word: 'dari', type: 'K' },
-  'loar': { word: 'di luar', type: 'K' },
-  'attas': { word: 'di atas', type: 'K' },
-  'baba': { word: 'di bawah', type: 'K' },
-  'romah' : { word: 'di rumah', type: 'K' },
-  'kelas' : { word: 'di kelas', type: 'K' },
-  'pasar' : { word: 'di pasar', type: 'K' },
+  'loar': { word: ' luar', type: 'K' },
+  'attas': { word: ' atas', type: 'K' },
+  'baba': { word: ' bawah', type: 'K' },
+  'romah' : { word: ' rumah', type: 'K' },
+  'kelas' : { word: ' kelas', type: 'K' },
+  'pasar' : { word: ' pasar', type: 'K' },
   
   // Keterangan - Waktu
   'lebbhi ngadak': { word: 'tadi', type: 'K' },

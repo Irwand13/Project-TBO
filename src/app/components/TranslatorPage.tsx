@@ -45,7 +45,7 @@ export function TranslatorPage() {
             <Textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Contoh: sengko makan nase e romah"
+              placeholder="Contoh: sengko ngakan nase e romah"
               className="min-h-[120px] border-gray-300 focus:border-[#B11226] focus:ring-[#B11226]/20"
               onKeyDown={(e) => {
                 if (e.key === 'Enter' && e.ctrlKey) {
@@ -267,7 +267,7 @@ export function TranslatorPage() {
           <h3 className="mb-4 text-[#1a1a1a]">Contoh Kalimat</h3>
           <div className="grid md:grid-cols-2 gap-3">
             {[
-              "sengko makan nase",
+              "sengko ngakan nase",
               "kula sajadah amasak sate sapolo",
               "vio nompak jharan",
               "irwan andik sapek lemak",
