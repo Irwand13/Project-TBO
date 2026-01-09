@@ -270,7 +270,7 @@ export function TranslatorPage() {
               "sengko ngakan nase",
               "kula sajadah amasak sate sapolo",
               "vio nompak jharan",
-              "irwan andik sapek lemak",
+              "irwan andik sape lema",
             ].map((example, index) => (
               <button
                 key={index}

@@ -204,7 +204,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'duwe': { word: 'dua', type: 'K' },
   'tello': { word: 'tiga', type: 'K' },
   'appat': { word: 'empat', type: 'K' },
-  'lemak': { word: 'lima', type: 'K' },
+  'lema': { word: 'lima', type: 'K' },
   'enem': { word: 'enam', type: 'K' },
   'pettong': { word: 'tujuh', type: 'K' },
   'balluk': { word: 'delapan', type: 'K' },
