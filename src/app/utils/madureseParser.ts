@@ -109,7 +109,8 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'acareta': { word: 'bercerita', type: 'P' },
   'tanya': { word: 'bertanya', type: 'P' },
   'ngowan': { word: 'memelihara', type: 'P' },
-  
+  'ngoding': { word: 'ngoding', type: 'P' },
+
   // Predikat - Kata Sifat
   'apek': { word: 'bagus', type: 'P' },
   'cepet': { word: 'cepat', type: 'P' },
@@ -150,6 +151,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'potlot': { word: 'pensil', type: 'O' },
   'dhalubang': { word: 'kertas', type: 'O' },
   'pangajharan': { word: 'pelajaran', type: 'O' },
+  'ngajhari': { word: 'mengajari', type: 'O' },
   'lalakon': { word: 'tugas', type: 'O' },
   'kalambi': { word: 'baju', type: 'O' },
   'lebbhar': { word: 'celana', type: 'O' },

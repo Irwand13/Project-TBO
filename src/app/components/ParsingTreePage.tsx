@@ -7,10 +7,10 @@ export function ParsingTreePage() {
   const [selectedExample, setSelectedExample] = useState(0);
 
   const examples = [
-    { sentence: "sengko makan nase", meaning: "Saya makan nasi" },
+    { sentence: "sengko ngakan nase", meaning: "Saya makan nasi" },
     { sentence: "guru ngajhari ngoding e dinna", meaning: "Guru mengajari ngoding di sini" },
     { sentence: "sape ngakan rebbha ", meaning: "sapi makan rumput" },
-    { sentence: "irwan macah buku e kelas ", meaning: "irwan membaca buku kelas" },
+    { sentence: "irwan e macah buku e kelas ", meaning: "irwan membaca buku kelas" },
     { sentence: "vio mangkat e pasar sateya", meaning: "vio pergi ke pasar sekarang" },
   ];
 
