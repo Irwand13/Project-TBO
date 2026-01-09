@@ -80,8 +80,8 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   // Predikat - Kata Kerja (Aktivitas Dasar)
   'ngakan': { word: 'makan', type: 'P' },
   'ngenom': { word: 'minum', type: 'P' },
-  'e macah': { word: 'membaca', type: 'P' },
-  'e noles': { word: 'menulis', type: 'P' },
+  'macah': { word: 'membaca', type: 'P' },
+  'noles': { word: 'menulis', type: 'P' },
   'tedung': { word: 'tidur', type: 'P' },
   'andik': { word: 'mempunyai', type: 'P' },
   
@@ -165,12 +165,12 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'e': { word: 'di', type: 'K' },
   'ka': { word: 'ke', type: 'K' },
   'dhari': { word: 'dari', type: 'K' },
-  'e loar': { word: 'di luar', type: 'K' },
-  'e attas': { word: 'di atas', type: 'K' },
-  'e baba': { word: 'di bawah', type: 'K' },
-  'e romah' : { word: 'di rumah', type: 'K' },
-  'e kelas' : { word: 'di kelas', type: 'K' },
-  'e pasar' : { word: 'di pasar', type: 'K' },
+  'loar': { word: 'di luar', type: 'K' },
+  'attas': { word: 'di atas', type: 'K' },
+  'baba': { word: 'di bawah', type: 'K' },
+  'romah' : { word: 'di rumah', type: 'K' },
+  'kelas' : { word: 'di kelas', type: 'K' },
+  'pasar' : { word: 'di pasar', type: 'K' },
   
   // Keterangan - Waktu
   'lebbhi ngadak': { word: 'tadi', type: 'K' },
