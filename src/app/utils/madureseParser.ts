@@ -64,6 +64,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'koceng': { word: 'kucing', type: 'S' },
   'patek': { word: 'anjing', type: 'S' },
   'embik': { word: 'kambing', type: 'S' },
+  'jharan': { word: 'kuda', type: 'S' },
   
   // Subjek - Kata Benda (Benda)
   'buku': { word: 'buku', type: 'S' },
@@ -82,6 +83,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'e macah': { word: 'membaca', type: 'P' },
   'e noles': { word: 'menulis', type: 'P' },
   'tedung': { word: 'tidur', type: 'P' },
+  'andik': { word: 'mempunyai', type: 'P' },
   
   // Predikat - Kata Kerja (Pergerakan)
   'ajhalen': { word: 'berjalan', type: 'P' },
@@ -89,7 +91,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'dateng': { word: 'datang', type: 'P' },
   'moleh': { word: 'pulang', type: 'P' },
   'abeli': { word: 'kembali', type: 'P' },
-  'terros': { word: 'naik', type: 'P' },
+  'nompak': { word: 'naik', type: 'P' },
   'toron': { word: 'turun', type: 'P' },
   'adinakagi': { word: 'berangkat', type: 'P' },
   
@@ -106,6 +108,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'abenta': { word: 'berbicara', type: 'P' },
   'acareta': { word: 'bercerita', type: 'P' },
   'tanya': { word: 'bertanya', type: 'P' },
+  'ngowan': { word: 'memelihara', type: 'P' },
   
   // Predikat - Kata Sifat
   'apek': { word: 'bagus', type: 'P' },
@@ -191,6 +194,16 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'coma': { word: 'hanya', type: 'K' },
   'bisa': { word: 'bisa', type: 'K' },
   'tak bisa': { word: 'tidak bisa', type: 'K' },
+  'settong': { word: 'satu', type: 'K' },
+  'duwe': { word: 'dua', type: 'K' },
+  'tello': { word: 'tiga', type: 'K' },
+  'appat': { word: 'empat', type: 'K' },
+  'lemak': { word: 'lima', type: 'K' },
+  'enem': { word: 'enam', type: 'K' },
+  'pettong': { word: 'tujuh', type: 'K' },
+  'balluk': { word: 'delapan', type: 'K' },
+  'sangak': { word: 'sembilan', type: 'K' },
+  'sapolo': { word: 'sepuluh', type: 'K' },  
 };
 
 // Levenshtein Distance untuk spell checking

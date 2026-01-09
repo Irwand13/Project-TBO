@@ -268,9 +268,9 @@ export function TranslatorPage() {
           <div className="grid md:grid-cols-2 gap-3">
             {[
               "sengko makan nase",
-              "bengkona bana e dimma",
+              "kula sajadah amasak sate sapolo",
               "vio nompak jharan",
-              "irwan andi sapek lema",
+              "irwan andik sapek lemak",
             ].map((example, index) => (
               <button
                 key={index}
