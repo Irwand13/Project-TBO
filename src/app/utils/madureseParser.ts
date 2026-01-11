@@ -392,10 +392,10 @@ export function getExampleSentences(): {
       meaning: "Guru mengajar pelajaran di sini",
     },
     {
-      sentence: "bheri ngakan jhuko",
+      sentence: " jhuko vio bheri",
       isValid: false,
-      structure: "K - P - O",
-      meaning: "Kemarin makan ikan",
+      structure: "O - S - K",
+      meaning: "Tidak valid: tidak ada predikat",
     },
     {
       sentence: "oreng lake mangkat edissa",
