@@ -268,7 +268,7 @@ export function TranslatorPage() {
           <div className="grid md:grid-cols-2 gap-3">
             {[
               "sengko ngakan nase",
-              "kula sajadah amasak sate sapolo",
+              "kula-sajadah amasak sate sapolo",
               "vio nompak jharan",
               "irwan andik sape lema",
             ].map((example, index) => (

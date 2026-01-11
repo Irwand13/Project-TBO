@@ -113,7 +113,7 @@ export function GrammarPage() {
                 </p>
                 <div className="space-y-1">
                   <p className="text-sm text-gray-500">Contoh:</p>
-                  <code className="text-sm text-[#B11226]">makan, ngaji, laju, apek</code>
+                  <code className="text-sm text-[#B11226]">ngakan, ngaji, laju, apek</code>
                 </div>
               </div>
             </div>

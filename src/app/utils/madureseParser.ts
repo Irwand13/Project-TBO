@@ -33,8 +33,8 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'kula': { word: 'saya', type: 'S' },
   'sampean': { word: 'anda', type: 'S' },
   'panjennengan': { word: 'beliau', type: 'S' },
-  'kula sajadah': { word: 'kami', type: 'S' },
-  'oreng-oreng rowa': { word: 'mereka', type: 'S' },
+  'kula-sajadah': { word: 'kami', type: 'S' },
+  'oreng-oreng-rowa': { word: 'mereka', type: 'S' },
   'vio': { word: 'vio', type: 'S' },
   'irwan': { word: 'irwan', type: 'S' },
   
@@ -126,6 +126,8 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'panas': { word: 'panas', type: 'P' },
   'senneng': { word: 'senang', type: 'P' },
   'sossa': { word: 'sedih', type: 'P' },
+  'ghanteng': { word: 'ganteng', type: 'P' },
+  'raddin': { word: 'cantik', type: 'P' },
   
   // Objek - Kata Benda (Makanan)
   'nase': { word: 'nasi', type: 'O' },
@@ -134,8 +136,8 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   'soto': { word: 'soto', type: 'O' },
   'gule': { word: 'gulai', type: 'O' },
   'sayur': { word: 'sayur', type: 'O' },
-  'wa buwaan': { word: 'buah', type: 'O' },
-  'buwana naga': { word: 'buah naga', type: 'O' },
+  'buwaan': { word: 'buah', type: 'O' },
+  'buwana-naga': { word: 'buah naga', type: 'O' },
   'somangka': { word: 'semangka', type: 'O' },
   'deging': { word: 'daging', type: 'O' },
   'jhuko': { word: 'ikan', type: 'O' },
@@ -162,6 +164,7 @@ const dictionary: { [key: string]: { word: string; type: string } } = {
   
   // Keterangan - Tempat
   'edissa': { word: 'di sana', type: 'K' },
+  'edinna' : {word : 'di sini', type: 'K'},
   'e': { word: 'di', type: 'K' },
   'ka': { word: 'ke', type: 'K' },
   'dhari': { word: 'dari', type: 'K' },
@@ -362,11 +365,11 @@ Predikat = Kata_Kerja | Kata_Sifat;
 Objek = Kata_Benda;
 Keterangan = Kata_Keterangan | Kata_Tempat | Kata_Waktu;
 
-Kata_Ganti = "sengko" | "bhadha" | "dhisa" | "kula" | "sampean" | "panjennengan" | "arek" | "bhita" | "reng";
-Kata_Benda = "oreng" | "anak" | "guru" | "buku" | "nase" | ...;
-Kata_Kerja = "makan" | "ngenom" | "ngaji" | "laju" | "dateng" | ...;
-Kata_Sifat = "apek" | "cepet" | "rajin" | ...;
-Kata_Keterangan = "dhibi" | "dika" | "sateya" | "kalaban" | ...;`;
+Kata_Ganti = "sengko" | "ebhu" | "bapa" | "kula-sajadah" | "sampean" | "na-kana" | "bine" | "lake" | "oreng";
+Kata_Benda = "buku" | "meja" | "korsi" | "romah" | "pasar" | ...;
+Kata_Kerja = "ngakan" | "ngenom" | "macah" | "mangkat" | "dateng" | ...;
+Kata_Sifat = "apek" | "raddin" | "gantheng" | ...;
+Kata_Keterangan = "edinna" | "laguna" | "sateya" | "bheri" | ...;`;
 }
 
 export function getExampleSentences(): { 
@@ -377,43 +380,43 @@ export function getExampleSentences(): {
 }[] {
   return [
     {
-      sentence: "sengko makan nase",
+      sentence: "sengko ngakan sate embik",
       isValid: true,
-      structure: "S - P - O",
-      meaning: "Saya makan nasi",
+      structure: "S - P - O - S",
+      meaning: "Saya makan sate kambing",
     },
     {
-      sentence: "guru ngajar lesson dhibi",
+      sentence: "guru ngajar pangajharan edinna",
       isValid: true,
       structure: "S - P - O - K",
       meaning: "Guru mengajar pelajaran di sini",
     },
     {
-      sentence: "anak belajar",
-      isValid: true,
-      structure: "S - P",
-      meaning: "Anak belajar",
+      sentence: "bheri ngakan jhuko",
+      isValid: false,
+      structure: "K - P - O",
+      meaning: "Kemarin makan ikan",
     },
     {
-      sentence: "dhisa laju ka dika",
+      sentence: "oreng lake mangkat edissa",
       isValid: true,
-      structure: "S - P - K - K",
+      structure: "S - S - P - K",
       meaning: "Dia pergi ke sana",
     },
     {
-      sentence: "makan nase",
+      sentence: "ngakan nase",
       isValid: false,
       structure: "P - O",
       meaning: "Tidak valid: tidak ada subjek",
     },
     {
-      sentence: "buku apek",
+      sentence: "nase e ngakan vio ",
       isValid: true,
-      structure: "S - P",
-      meaning: "Buku bagus",
+      structure: "O - K - P - S",
+      meaning: "Nasi di makan vio",
     },
     {
-      sentence: "murid ngaji buku bi dhibi",
+      sentence: "murid macah buku bi edinna",
       isValid: true,
       structure: "S - P - O - K - K",
       meaning: "Murid membaca buku di sini",
